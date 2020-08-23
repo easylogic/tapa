@@ -13,7 +13,7 @@ npm install @easylogic/tapa
 # How to use in es6
 
 ```js
-import {App, UIElement, EVENT, CLICK} from '@easylogic/tapa'
+import {render, UIElement, EVENT, CLICK} from '@easylogic/tapa'
 
 ```
 

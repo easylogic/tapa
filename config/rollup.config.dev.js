@@ -7,8 +7,6 @@ import babel from '@rollup/plugin-babel';
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
 
-import pkg from '../package.json';
-
 const extensions = ['.ts'];
 
 export default {
@@ -17,11 +15,6 @@ export default {
     {
         file: 'dist/cjs/index.js',
         format: 'umd',
-        name: 'Tapa',
-    },
-    {
-        file: 'dist/esm/index.js',
-        format: 'es',
         name: 'Tapa',
     },
   ],
