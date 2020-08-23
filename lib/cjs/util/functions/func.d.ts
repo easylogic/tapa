@@ -1,0 +1,18 @@
+import { KeyValue } from "../../types/constants";
+export declare function debounce(callback: (...args: any[]) => void, delay?: number): (...args: any[]) => void;
+export declare function throttle(callback: (...args: any[]) => void, delay?: number): (...args: any[]) => void;
+export declare function keyEach(obj: KeyValue, callback: (key: string, value: any, index: number) => void): void;
+export declare function keyMap(obj: KeyValue, callback: (key: string, value: any, index: number) => void): any[];
+export declare function isUndefined(value: any): boolean;
+export declare function isNotUndefined(value: any): boolean;
+export declare function isArray(value: any): boolean;
+export declare function isBoolean(value: any): boolean;
+export declare function isString(value: any): boolean;
+export declare function isNotString(value: any): boolean;
+export declare function isObject(value: any): boolean;
+export declare function isFunction(value: any): boolean;
+export declare function isNumber(value: any): boolean;
+export declare function clone(obj: any): any;
+export declare const html: (strings: TemplateStringsArray, ...args: any[]) => string;
+export declare function uuid(): string;
+export declare function uuidShort(): string;

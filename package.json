@@ -1,0 +1,39 @@
+{
+  "name": "@easylogic/tapa",
+  "version": "0.0.3",
+  "homepage": "https://github.com/easylogic/tapa",
+  "repository" : {
+    "type" : "git",
+    "url": "https:://github.com/easylogic/tapa.git"
+  },
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build:esm": "tsc ",    
+    "build:lib": "rollup --config config/rollup.config.js",
+    "build:dev": "rollup --config config/rollup.config.dev.js -w",
+    "prepublish": "yarn build:lib"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.26.5",
+    "rollup-plugin-livereload": "^1.3.0",
+    "rollup-plugin-serve": "^1.0.3",
+    "rollup-plugin-terser": "^7.0.0",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "typescript": "^4.0.2"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "easylogic",
+    "email": "cyberuls@gmail.com",
+    "url": "https://github.com/easylogic"
+  },
+  "dependencies": {}
+}
