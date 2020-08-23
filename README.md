@@ -20,9 +20,9 @@ import {render, UIElement, EVENT, CLICK} from '@easylogic/tapa'
 # How to use in browser 
 
 ```html
-<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/@easylogic/tapa@0.0.15/dist/tapa.js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/@easylogic/tapa@0.0.3/lib/cjs/index.js'></script>
 <script type='text/javacript'>
-    const {render, CLICK, EVENT, UIElement} = tapa;   // or window.tapa 
+    const {render, CLICK, EVENT, UIElement} = Tapa;   // or window.Tapa 
 </script>
 
 ```
